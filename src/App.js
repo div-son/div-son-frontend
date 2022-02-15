@@ -1,5 +1,5 @@
 import React from 'react'
-import  Form  from './oauth/Form'
+import Form from './oauth/register/Form';
 
 export const App = () => {
   return (
