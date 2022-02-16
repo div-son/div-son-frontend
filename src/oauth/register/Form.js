@@ -1,9 +1,9 @@
 import React from 'react'
-import Register from './RegisterForm';
+import RegisterForm from './RegisterForm';
 
 export const Form = () => {
   return (
-    <div><Register /></div>
+    <div><RegisterForm /></div>
   )
 }
 

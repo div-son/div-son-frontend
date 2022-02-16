@@ -1,11 +1,12 @@
-import React from "react";
 import { AiOutlineUser } from "react-icons/ai";
 import { BiUser } from "react-icons/bi";
 import { BsTelephone } from "react-icons/bs";
 import { AiOutlineMail } from "react-icons/ai";
 import { CgPassword } from "react-icons/cg";
 
+
 export const RegisterForm = () => {
+
   return (
     <div className="container">
       <div className="app-wrapper">
@@ -19,75 +20,73 @@ export const RegisterForm = () => {
             <div className="inputIcon">
               <AiOutlineUser />
             </div>
-
-            <div className="success">
-              <label className="label">First name </label>
-              <input
-                placeholder="Enter first name"
-                className="input"
-                type="text"
-                name="firstname"
-              />
-            </div>
+                <label className="label">First name </label>
+                <input
+                  placeholder="Chukwu John"
+                  className="input"
+                  type="text"
+                  name="firstname"
+                  id="firstname"
+                />
           </div>
 
           <div className="form-group">
             <div className="inputIcon">
               <BiUser />
             </div>
-            <div className="success">
-            <label className="label">Last name</label>
-            <input
-              placeholder="Enter last name"
-              className="input"
-              type="text"
-              name="lastname"
-            />
-            </div>
+                <label className="label">Last name</label>
+                <input
+                  placeholder="Adeyemi"
+                  className="input"
+                  type="text"
+                  name="lastname"
+                  id="lastname"
+                />
           </div>
 
           <div className="form-group">
             <div className="inputIcon">
               <BsTelephone />
             </div>
-            <div className="success">
-            <label className="label">Phone number</label>
-            <input
-              placeholder="Enter phone number"
-              className="input"
-              type="tel"
-              name="phonenumber"
-            />
-            </div>
+                <label className="label">Phone number</label>
+                <input
+                  placeholder="123456789"
+                  className="input"
+                  type="tel"
+                  name="phonenumber"
+                  id="phonenumber"
+               /> 
           </div>
 
           <div className="form-group">
             <div className="inputIcon">
               <AiOutlineMail />
             </div>
-            <div className="success">
-            <label className="label">Email</label>
-            <input
-              placeholder="Enter email address"
-              className="input"
-              type="email"
-              name="email"
-            />
-            </div>
+                <label className="label">Email</label>
+                <input
+                  placeholder="socialNetwork@register.com"
+                  className="input"
+                  type="email"
+                  name="email"
+                  id="email"
+                />
           </div>
 
           <div className="form-group">
             <div className="inputIcon">
               <CgPassword />
             </div>
-            <div className="success">
-            <label className="label">Password</label>
-            <input
-              placeholder="Enter password"
-              className="input"
-              type="text"
-              name="password"
-            />
+                <label className="label">Password</label>
+                <div id="wrapper">
+                  <input
+                    placeholder="makeItStrong"
+                    className="input"
+                    // type={showPassword ? "text" : "password"}
+                    type="password"
+                    name="password"
+                    id="password"
+                  />
+                
             </div>
           </div>
 
