@@ -28,6 +28,7 @@
   margin: 80px 0px 40px 0px;
   font-size: 48px;
   margin-bottom: 8px;
+  /* color: blue; */
 }
 
 .welcome{
@@ -35,6 +36,7 @@
   letter-spacing: 5px;
   font-size: 24px;
   margin-bottom: 10%;
+  /* color: blue; */
 }
 
 label{
@@ -46,6 +48,29 @@ label{
 .form-group{
   position: relative;
 }
+
+.success input{
+  border-color: rgb(84, 240, 84);
+}
+
+.error input{
+  border-color: rgb(247, 67, 67);
+}
+
+.error small{
+  visibility: visible;
+  color: red;
+  position: absolute;
+  margin-left: 20%;
+  margin-top: 16.2%;
+  margin-left: 0.8%;
+}
+
+#wrapper{
+  font-weight: 200%;
+}
+
+
 .input{
   height:43px;
   font-size: 20px;
