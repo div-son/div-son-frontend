@@ -46,6 +46,11 @@ label{
 .form-group{
   position: relative;
 }
+
+.success input{
+  border-color: rgb(84, 240, 84);
+}
+
 .input{
   height:43px;
   font-size: 20px;

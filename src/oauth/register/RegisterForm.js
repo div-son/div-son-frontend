@@ -5,7 +5,7 @@ import { BsTelephone } from "react-icons/bs";
 import { AiOutlineMail } from "react-icons/ai";
 import { CgPassword } from "react-icons/cg";
 
-export const Register = () => {
+export const RegisterForm = () => {
   return (
     <div className="container">
       <div className="app-wrapper">
@@ -20,19 +20,22 @@ export const Register = () => {
               <AiOutlineUser />
             </div>
 
-            <label className="label">First name </label>
-            <input
-              placeholder="Enter first name"
-              className="input"
-              type="text"
-              name="firstname"
-            />
+            <div className="success">
+              <label className="label">First name </label>
+              <input
+                placeholder="Enter first name"
+                className="input"
+                type="text"
+                name="firstname"
+              />
+            </div>
           </div>
 
           <div className="form-group">
             <div className="inputIcon">
               <BiUser />
             </div>
+            <div className="success">
             <label className="label">Last name</label>
             <input
               placeholder="Enter last name"
@@ -40,12 +43,14 @@ export const Register = () => {
               type="text"
               name="lastname"
             />
+            </div>
           </div>
 
           <div className="form-group">
             <div className="inputIcon">
               <BsTelephone />
             </div>
+            <div className="success">
             <label className="label">Phone number</label>
             <input
               placeholder="Enter phone number"
@@ -53,12 +58,14 @@ export const Register = () => {
               type="tel"
               name="phonenumber"
             />
+            </div>
           </div>
 
           <div className="form-group">
             <div className="inputIcon">
               <AiOutlineMail />
             </div>
+            <div className="success">
             <label className="label">Email</label>
             <input
               placeholder="Enter email address"
@@ -66,12 +73,14 @@ export const Register = () => {
               type="email"
               name="email"
             />
+            </div>
           </div>
 
           <div className="form-group">
             <div className="inputIcon">
               <CgPassword />
             </div>
+            <div className="success">
             <label className="label">Password</label>
             <input
               placeholder="Enter password"
@@ -79,6 +88,7 @@ export const Register = () => {
               type="text"
               name="password"
             />
+            </div>
           </div>
 
           <div>
@@ -96,5 +106,4 @@ export const Register = () => {
     </div>
   );
 };
-
-export default Register;
+export default RegisterForm;
