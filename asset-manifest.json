@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/div-son/div-son.github.io/static/css/main.bf514db9.css",
-    "main.js": "/div-son/div-son.github.io/static/js/main.c62731fe.js",
-    "static/js/787.fd2b80c1.chunk.js": "/div-son/div-son.github.io/static/js/787.fd2b80c1.chunk.js",
-    "index.html": "/div-son/div-son.github.io/index.html",
-    "main.bf514db9.css.map": "/div-son/div-son.github.io/static/css/main.bf514db9.css.map",
-    "main.c62731fe.js.map": "/div-son/div-son.github.io/static/js/main.c62731fe.js.map",
-    "787.fd2b80c1.chunk.js.map": "/div-son/div-son.github.io/static/js/787.fd2b80c1.chunk.js.map"
+    "main.css": "/SocialNetwork/static/css/main.36e1f6ce.css",
+    "main.js": "/SocialNetwork/static/js/main.22a06835.js",
+    "static/js/787.fd2b80c1.chunk.js": "/SocialNetwork/static/js/787.fd2b80c1.chunk.js",
+    "index.html": "/SocialNetwork/index.html",
+    "main.36e1f6ce.css.map": "/SocialNetwork/static/css/main.36e1f6ce.css.map",
+    "main.22a06835.js.map": "/SocialNetwork/static/js/main.22a06835.js.map",
+    "787.fd2b80c1.chunk.js.map": "/SocialNetwork/static/js/787.fd2b80c1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bf514db9.css",
-    "static/js/main.c62731fe.js"
+    "static/css/main.36e1f6ce.css",
+    "static/js/main.22a06835.js"
   ]
 }
