@@ -49,26 +49,26 @@ label{
   position: relative;
 }
 
-.success input{
+/* .success input{
   border-color: rgb(84, 240, 84);
 }
 
 .error input{
   border-color: rgb(247, 67, 67);
-}
+} */
 
-.error small{
+/* .error small{
   visibility: visible;
   color: red;
   position: absolute;
   margin-left: 20%;
   margin-top: 16.2%;
   margin-left: 0.8%;
-}
+} */
 
-#wrapper{
+/* #wrapper{
   font-weight: 200%;
-}
+} */
 
 
 .input{
@@ -76,6 +76,8 @@ label{
   font-size: 20px;
   outline: none;
   width: 100%;
+  border: none;
+  background-color: #f5f7fa;
   border-top-style:none;
   border-left-style: none;
   border-right-style: none;
