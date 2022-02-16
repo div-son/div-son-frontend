@@ -22,7 +22,7 @@ export const RegisterForm = () => {
             </div>
                 <label className="label">First name </label>
                 <input
-                  placeholder="Chukwu John"
+                  placeholder="Chukwu Mohammed"
                   className="input"
                   type="text"
                   name="firstname"
