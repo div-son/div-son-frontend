@@ -49,6 +49,7 @@
       <updated>1644944089429</updated>
       <workItem from="1644944092634" duration="824000" />
       <workItem from="1645101934098" duration="194000" />
+      <workItem from="1645323722878" duration="298000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1644944279538</created>
@@ -64,7 +65,42 @@
       <option name="project" value="LOCAL" />
       <updated>1644944307941</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="npm build">
+      <created>1645323767412</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1645323767412</updated>
+    </task>
+    <task id="LOCAL-00004" summary="npm build">
+      <created>1645323840294</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1645323840294</updated>
+    </task>
+    <task id="LOCAL-00005" summary="npm build">
+      <created>1645323975869</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1645323975869</updated>
+    </task>
+    <task id="LOCAL-00006" summary="npm build">
+      <created>1645324007052</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1645324007053</updated>
+    </task>
+    <task id="LOCAL-00007" summary="npm build">
+      <created>1645324018110</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1645324018110</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -85,6 +121,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="first commit" />
     <MESSAGE value="merge branch" />
-    <option name="LAST_COMMIT_MESSAGE" value="merge branch" />
+    <MESSAGE value="npm build" />
+    <option name="LAST_COMMIT_MESSAGE" value="npm build" />
   </component>
 </project>
