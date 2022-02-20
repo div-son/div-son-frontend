@@ -1,0 +1,55 @@
+.showcase{
+    max-width: 800px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.showcase h1{
+    font-size: 64px;
+    color: white;
+    font-weight: normal;
+    letter-spacing: 3px;
+}
+
+.showcase h2{
+    font-size: 28;
+    color: white;
+    font-weight: lighter;
+    letter-spacing: 4px;
+}
+
+.showcase p{
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.showcase__btn-signup{
+    border: white solid 1px;
+    background-color: transparent;
+    color: white;
+    padding: 10px 50px;
+    margin: 0 10px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.icon{
+    font-size: 14px;
+}
+
+.showcase__btn-login{
+    border: white solid 1px;
+    background-color: white;
+    color: rgb(26, 100, 122);
+    padding: 10px 50px;
+    margin: 0 10px;
+    border-radius: 20px;
+}
+
