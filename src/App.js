@@ -1,13 +1,12 @@
 import React from 'react'
-import Form from './oauth/components/register/Form';
-// import Dashboard from './oauth/components/dashboard/Dashboard';
+import LandingPage from "./oauth/components/dashboard/LandingPage";
 
 export const App = () => {
   return (
-    <div><Form/></div>
-    // <div><Dashboard/></div>
-
-      )
+    <div>
+      <LandingPage />
+    </div>
+  );
 }
 
 export default App;
