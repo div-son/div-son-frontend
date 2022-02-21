@@ -1,6 +1,8 @@
 import React from "react";
-import "./Showcase.css"
-import {AiOutlineArrowRight} from 'react-icons/ai'
+import "./Showcase.css";
+// import Register from "../register/RegisterForm";
+
+import { AiOutlineArrowRight } from "react-icons/ai";
 
 export const Showcase = () => {
   return (
@@ -8,14 +10,23 @@ export const Showcase = () => {
       <h2>Discover an Adventure</h2>
       <h1>Get your projects done!!</h1>
 
-      <p>
-        We are software Engineers
-      </p>
+      <p>We are software Engineers</p>
 
       <div className="showcase__buttons">
-        <button className="showcase__btn-signup">Get Started <b className="icon"><AiOutlineArrowRight/></b></button>
+        <a href="#">
+          <button className="showcase__btn-signup">
+            Get Started
+            <b className="icon">
+              <AiOutlineArrowRight />
+            </b>
+          </button>
+        </a>
 
-        <button className="showcase__btn-login">Login</button>
+        <a href="#">
+          <button className="showcase__btn-login">
+            Login
+            </button>
+        </a>
       </div>
     </div>
   );

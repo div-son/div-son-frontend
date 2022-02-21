@@ -49,6 +49,7 @@
     background-color: white;
     color: rgb(26, 100, 122);
     padding: 10px 50px;
+    cursor: pointer;
     margin: 0 10px;
     border-radius: 20px;
 }
