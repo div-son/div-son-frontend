@@ -1,6 +1,6 @@
 import React from "react";
 import Eva from "./Eva";
-import "./Main.css"
+import "../../styles/Main.css"
 
 import Showcase from "./Showcase";
 
