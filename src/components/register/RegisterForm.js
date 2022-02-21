@@ -82,8 +82,7 @@ export const RegisterForm = () => {
                 <div id="wrapper">
                   <input
                     placeholder="makeItStrong"
-                    className="input"
-                    // type={showPassword ? "text" : "password"}
+    //                 className="input"
                     type="password"
                     name="password"
                     id="password"
