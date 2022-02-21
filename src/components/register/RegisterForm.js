@@ -3,7 +3,7 @@ import { BiUser } from "react-icons/bi";
 import { BsTelephone } from "react-icons/bs";
 import { AiOutlineMail } from "react-icons/ai";
 import { CgPassword } from "react-icons/cg";
-import "./Register.css";
+import "../../styles/Register.css"
 
 
 export const RegisterForm = () => {

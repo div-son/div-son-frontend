@@ -1,5 +1,5 @@
 import React,{useState} from 'react'
-import "./Main.css";
+import "../../styles/Main.css";
 
 
 export const Eva = () => {
