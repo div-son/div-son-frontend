@@ -12,6 +12,7 @@ export const RegisterForm = () => {
     <div className="container">
       <div className="app-wrapper">
         <div>
+          {/*  */}
           <h2 className="title">Register</h2>
           <p className="welcome">Welcome!</p>
         </div>
