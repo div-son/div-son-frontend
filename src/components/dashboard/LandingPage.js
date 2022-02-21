@@ -1,16 +1,14 @@
 import React from "react";
-import Eva from "./Eva";
-import "../../styles/Main.css"
-
+import Navbar from "./Navbar";
+import "../../styles/Main.css";
 import Showcase from "./Showcase";
-
 
 export const LandingPage = () => {
   return (
-    <div className="main">
-      <Eva />
-      <Showcase />
-    </div>
+      <div className="main">
+        <Navbar />
+        <Showcase />
+      </div>
   );
 };
 
