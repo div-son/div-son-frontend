@@ -44,8 +44,10 @@ nav {
 .navlinks {
   display: flex;
   list-style: none;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 50%;
+  padding-bottom: -8px;
+  cursor: pointer;
   font-size: 24px;
   font-family: 'Ubuntu', sans-serif;
 }
@@ -62,11 +64,11 @@ nav {
 
 }
 
-.link a:hover{
+.link:hover{
     color: rgb(142, 226, 103);
 }
 
-.link a{
+.link{
     color: rgba(255, 255, 255, 0.85);
 }
 
@@ -93,7 +95,6 @@ nav {
         background-color: rgb(14, 17, 206);
         font-size: 32px;
         transform: translate(100%);
-        /* transition: transform 0.5s ease-in; */
         transition: transform 0.5s ease-in;
     }
     

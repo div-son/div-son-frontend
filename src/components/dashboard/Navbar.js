@@ -2,7 +2,7 @@ import React,{useState} from 'react'
 import "../../styles/Main.css";
 
 
-export const Eva = () => {
+export const Navbar = () => {
 
   const [navLinkOpen, navLinkToggle] = useState(false)
 
@@ -28,19 +28,19 @@ export const Eva = () => {
 
       <ul className={renderClasses()}>
         <li className="link">
-          <a href="#">Home</a>
+          Home
         </li>
 
         <li className="link">
-          <a href="#">About</a>
+          About
         </li>
 
         <li className="link">
-          <a href="#">Contact us</a>
+          Contact us
         </li>
 
         <li className="link">
-          <a href="#">Services</a>
+          Services
         </li>
       </ul>
 
@@ -54,4 +54,4 @@ export const Eva = () => {
   );
 }
 
-export default Eva
+export default Navbar;
