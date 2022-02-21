@@ -1,6 +1,5 @@
 import React from "react";
-import "./Showcase.css";
-// import Register from "../register/RegisterForm";
+import "../../styles/Showcase.css";
 
 import { AiOutlineArrowRight } from "react-icons/ai";
 
@@ -23,9 +22,7 @@ export const Showcase = () => {
         </a>
 
         <a href="#">
-          <button className="showcase__btn-login">
-            Login
-            </button>
+          <button className="showcase__btn-login">Login</button>
         </a>
       </div>
     </div>
