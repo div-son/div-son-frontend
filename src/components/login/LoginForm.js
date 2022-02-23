@@ -1,78 +1,55 @@
 import React from "react";
-import {
-  Grid,
-  Paper,
-  Avatar,
-  TextField,
-  Button,
-  Typography,
-  Link,
-} from "@material-ui/core";
-import LockOutlinedIcon from "@material-ui/icons/LockOutlined";
-import { FormControlLabel } from "@material-ui/core";
-import { Checkbox } from "@material-ui/core";
+import UserInput from "./UserInput";
+import { useState } from "react";
 
-export const LoginForm = ({ handleChange }) => {
-  const paperStyle = {
-    padding: 20,
-    height: "73vh",
-    width: 300,
-    margin: "0 auto",
+export const LoginForm = ({ props }) => {
+  const [values, setValues] = useState({
+    email: "",
+    password: "",
+  });
+
+  const inputs = [
+    {
+      id: 1,
+      name: "email",
+      type: "email",
+      placeholder: "Enter email",
+      label: "Email",
+    },
+
+    {
+      id: 2,
+      name: "password",
+      type: "password",
+      placeholder: "Enter your password",
+      label: "password",
+    },
+  ];
+
+  const handleSumit = (e) => {
+    e.preventDefault();
   };
 
-  const avatarStyle = { backgroundColor: "#1bbd7e" };
-  const btnstyle = { margin: "8px 0" };
+  const onChange = (e) => {
+    setValues({ ...values, [e.target.name]: e.target.value });
+  };
 
   return (
-    <Grid>
-      <Paper style={paperStyle}>
-        <Grid align="center">
-          <Avatar style={avatarStyle}>
-            <LockOutlinedIcon />
-          </Avatar>
-          <h2>Div-son sign In page</h2>
-        </Grid>
+    <div className="form-wrapper">
+      <form onSubmit={handleSumit}>
+        <h1>Continue from where you left us!</h1>
+        {inputs.map((input) => (
+          <UserInput
+            key={input.id}
+            {...input}
+            value={values[input.name]}
+            onChange={onChange}
+          />
+        ))}
 
-        <TextField
-          label="Email"
-          placeholder="Enter email"
-          type="email"
-          fullWidth
-          required
-        />
-
-        <TextField
-          label="Password"
-          placeholder="Enter password"
-          type="password"
-          fullWidth
-          required
-        />
-
-        <FormControlLabel
-          control={<Checkbox name="checkedB" color="primary" />}
-          label="Remember me"
-        />
-        <Button
-          type="submit"
-          color="primary"
-          variant="contained"
-          style={btnstyle}
-          fullWidth
-        >
-          Log in
-        </Button>
-        <Typography>
-          <Link href="#">Forgot password ?</Link>
-        </Typography>
-        <Typography>
-          Don't have an account?
-          <Link to="/register" onClick={() => handleChange("event", 1)}>
-            Sign Up
-          </Link>
-        </Typography>
-      </Paper>
-    </Grid>
+        <button>Login</button>
+      </form>
+    </div>
   );
 };
 
