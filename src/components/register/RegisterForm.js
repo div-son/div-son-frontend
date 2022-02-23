@@ -1,63 +1,84 @@
-import "../../styles/Register.css"
+import "../../styles/Register.css";
+import FormInput from "./FormInput";
+import { useState } from "react";
 
+export const RegisterForm = (props) => {
+  const [values, setValues] = useState({
+    firstname: "",
+    lastname: "",
+    email: "",
+    password: "",
+  });
 
-export const RegisterForm = () => {
-  return (    
-    <div className="container">
-      <form>
-        <h1>Register Form</h1>
+  const inputs = [
+    {
+      id: 1,
+      name: "firstname",
+      type: "text",
+      placeholder: "Enter first name",
+      errorMessage: "First name is invalid",
+      label: "First name",
+      pattern: "^[A-Za-z]",
+      required: true,
+    },
 
-        <div className="ui divider"></div>
-        <div className="ui form">
-          <div className="field">
-            <label>First name</label>
-            <input
-              type="text"
-              name="first name"
-              placeholder="Please share your first name"
-            />
-          </div>
+    {
+      id: 2,
+      name: "lastname",
+      type: "text",
+      placeholder: "Enter last name",
+      errorMessage: "Invalid last name",
+      label: "Last name",
+      pattern: "^[A-Za-z]",
+      required: true,
+    },
 
-          <div className="field">
-            <label>Last name</label>
-            <input
-              type="text"
-              name="last name"
-              placeholder="Please share your last name"
-            />
-          </div>
+    {
+      id: 3,
+      name: "email",
+      type: "email",
+      placeholder: "Enter email",
+      errorMessage: "Email type not supported",
+      label: "Email",
+      required: true,
+    },
 
-          <div className="field">
-            <label>Phone number</label>
-            <input
-              type="tel"
-              name="phone number"
-              placeholder="Hey, let's get your number."
-            />
-          </div>
+    {
+      id: 4,
+      name: "password",
+      type: "password",
+      placeholder: "Enter your password",
+      errorMessage: "Password is invalid",
+      label: "password",
+      pattern: `^(?=.*[0-9])(?=.*[A-Za-z])(?=.*[!@#$%^&*])[a-zA-z0-9!@#$%^&*]{8, 20}$`,
+      required: true,
+    },
+  ];
 
-          <div className="field">
-            <label>Password</label>
-            <input
-              type="password"
-              name="password"
-              placeholder="make it strong"
-            />
-          </div>
+  const handleSumit = (e) => {
+    e.preventDefault();
+  };
 
-          <div className="field">
-            <label>Password</label>
-            <input
-              type="email"
-              name="email"
-              placeholder="Please share your email"
-            />
-          </div>
+  const onChange = (e) => {
+    setValues({ ...values, [e.target.name]: e.target.value });
+  };
 
-        </div>
+  return (
+    <div className="form-wrapper">
+      <form onSubmit={handleSumit}>
+        <h1>Welcome!</h1>
+        {inputs.map((input) => (
+          <FormInput
+            key={input.id}
+            {...input}
+            value={values[input.name]}
+            onChange={onChange}
+          />
+        ))}
+
+        <button>Submit</button>
       </form>
     </div>
   );
 };
-
 export default RegisterForm;
