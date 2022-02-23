@@ -8,9 +8,9 @@ export const Showcase = () => {
   return (
     <div className="showcase">
       <h2>Discover an Adventure</h2>
-      <h1>Get your projects done!!</h1>
+      <h1>Made with designs!!</h1>
 
-      <p>We are software Engineers</p>
+      <p>Say hello to people out there.</p>
 
       <div className="showcase__buttons">
         <Link to="/register">

@@ -1,7 +1,7 @@
 import React from "react";
 import "../../styles/Input.css";
 
-export const FormInput = (props) => {
+export const UserInput = (props) => {
   const { label, onChange, id, ...inputProps } = props;
 
   return (
@@ -12,4 +12,4 @@ export const FormInput = (props) => {
   );
 };
 
-export default FormInput;
+export default UserInput;

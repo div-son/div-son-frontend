@@ -16,10 +16,7 @@ export const RegisterForm = (props) => {
       name: "firstname",
       type: "text",
       placeholder: "Enter first name",
-      errorMessage: "First name is invalid",
       label: "First name",
-      pattern: "^[A-Za-z]",
-      required: true,
     },
 
     {
@@ -27,10 +24,7 @@ export const RegisterForm = (props) => {
       name: "lastname",
       type: "text",
       placeholder: "Enter last name",
-      errorMessage: "Invalid last name",
       label: "Last name",
-      pattern: "^[A-Za-z]",
-      required: true,
     },
 
     {
@@ -38,9 +32,7 @@ export const RegisterForm = (props) => {
       name: "email",
       type: "email",
       placeholder: "Enter email",
-      errorMessage: "Email type not supported",
       label: "Email",
-      required: true,
     },
 
     {
@@ -48,10 +40,7 @@ export const RegisterForm = (props) => {
       name: "password",
       type: "password",
       placeholder: "Enter your password",
-      errorMessage: "Password is invalid",
       label: "password",
-      pattern: `^(?=.*[0-9])(?=.*[A-Za-z])(?=.*[!@#$%^&*])[a-zA-z0-9!@#$%^&*]{8, 20}$`,
-      required: true,
     },
   ];
 
