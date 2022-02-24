@@ -1,24 +1,22 @@
-import React,{useState} from 'react'
+import React, { useState } from "react";
 import "../../styles/Main.css";
 
-
 export const Navbar = () => {
+  const [navLinkOpen, navLinkToggle] = useState(false);
 
-  const [navLinkOpen, navLinkToggle] = useState(false)
+  const handleNavLinksToggle = () => {
+    navLinkToggle(!navLinkOpen);
+  };
 
-  const handleNavLinksToggle = () =>{
-    navLinkToggle(!navLinkOpen)
-  }
+  const renderClasses = () => {
+    let classes = "navlinks";
 
-  const renderClasses = () =>{
-    let classes = "navlinks"
-
-    if(navLinkOpen){
-      classes += " active"
+    if (navLinkOpen) {
+      classes += " active";
     }
 
-    return classes
-  }
+    return classes;
+  };
 
   return (
     <nav>
@@ -27,31 +25,20 @@ export const Navbar = () => {
       </div>
 
       <ul className={renderClasses()}>
-        <li className="link">
-          Home
-        </li>
+        <li className="link">Home</li>
 
-        <li className="link">
-          About
-        </li>
+        <li className="link">About</li>
 
-        <li className="link">
-          Contact us
-        </li>
+        <li className="link">Contact us</li>
 
-        <li className="link">
-          Services
-        </li>
+        <li className="link">Services</li>
       </ul>
 
       <div onClick={handleNavLinksToggle} className="hamburger-toggle">
         <i className="fa fa-bars" aria-hidden="true"></i>
       </div>
-
-      
     </nav>
-    
   );
-}
+};
 
 export default Navbar;

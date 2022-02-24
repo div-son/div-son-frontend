@@ -13,9 +13,9 @@ export const Showcase = () => {
       <h1>Made with designs!!</h1>
 
       <p>Say hello to people out there.</p>
-
+      {/*  */}
       <div className="showcase__buttons">
-        <Link to="/register">
+        <Link to="/SocialNetwork/register">
           <button className="showcase__btn-signup">
             Get Started
             <b className="icon">
@@ -24,7 +24,7 @@ export const Showcase = () => {
           </button>
         </Link>
 
-        <Link to="/login">
+        <Link to="/SocialNetwork/login">
           <button className="showcase__btn-login">Login</button>
         </Link>
       </div>
