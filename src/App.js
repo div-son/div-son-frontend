@@ -5,8 +5,6 @@ import RegisterForm from "./components/register/RegisterForm";
 import LoginForm from "./components/login/LoginForm";
 
 export const App = () => {
-
-  
   return (
     <div className="App">
       <Router>
@@ -16,7 +14,6 @@ export const App = () => {
           <Route path="/login" element={<LoginForm />} />
         </Routes>
       </Router>
-
     </div>
   );
 };
