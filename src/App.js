@@ -9,9 +9,9 @@ export const App = () => {
     <div className="App">
       <Router>
         <Routes>
-          <Route path="/SocialNetWork" element={<LandingPage />} />
-          <Route path="/SocialNetWork/register" element={<RegisterForm />} />
-          <Route path="/login" element={<LoginForm />} />
+          <Route path="/SocialNetwork" element={<LandingPage />} />
+          <Route path="/SocialNetwork/register" element={<RegisterForm />} />
+          <Route path="/SocialNetwork/login" element={<LoginForm />} />
         </Routes>
       </Router>
     </div>
