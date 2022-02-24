@@ -13,7 +13,7 @@ export const Showcase = () => {
       <p>Say hello to people out there.</p>
 
       <div className="showcase__buttons">
-        <Link to="/register">
+        <Link to="/SocialNetWork/register">
           <button className="showcase__btn-signup">
             Get Started
             <b className="icon">
