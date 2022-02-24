@@ -9,6 +9,7 @@ export const Navbar = () => {
   const handleNavLinksToggle = () =>{
     navLinkToggle(!navLinkOpen)
   }
+  // 
 
   const renderClasses = () =>{
     let classes = "navlinks"
