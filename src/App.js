@@ -11,7 +11,7 @@ export const App = () => {
     <div className="App">
       <Router>
         <Routes>
-          <Route path="/SocialNetWork" element={<LandingPage />} />
+          <Route path="/SocialNetWork/" element={<LandingPage />} />
           <Route path="/register" element={<RegisterForm />} />
           <Route path="/login" element={<LoginForm />} />
         </Routes>
