@@ -5,6 +5,8 @@ import RegisterForm from "./components/register/RegisterForm";
 import LoginForm from "./components/login/LoginForm";
 
 export const App = () => {
+
+  
   return (
     <div className="App">
       <Router>

@@ -5,6 +5,8 @@ import { Link } from "react-router-dom";
 import { AiOutlineArrowRight } from "react-icons/ai";
 
 export const Showcase = () => {
+
+  
   return (
     <div className="showcase">
       <h2>Discover an Adventure</h2>
