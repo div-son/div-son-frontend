@@ -1,6 +1,8 @@
 import "../../styles/Register.css";
 import FormInput from "./FormInput";
 import { useState } from "react";
+// import axios from "axios";
+
 
 export const RegisterForm = (props) => {
   const [values, setValues] = useState({
@@ -43,6 +45,12 @@ export const RegisterForm = (props) => {
       label: "password",
     },
   ];
+
+  // const getJoke = () => {
+  //   axios.get("https://div-son.herokuapp.com").then((response) => {
+  //     console.log(response);
+  //   });
+  // };
 
   const handleSumit = (e) => {
     e.preventDefault();
