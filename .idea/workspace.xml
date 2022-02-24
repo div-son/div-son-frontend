@@ -1,7 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8df8e5e2-0258-4c81-8eaa-798883846be4" name="Changes" comment="npm build" />
+    <list default="true" id="8df8e5e2-0258-4c81-8eaa-798883846be4" name="Changes" comment="npm build">
+      <change afterPath="$PROJECT_DIR$/src/components/login/UserInput.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/register/FormInput.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/image/diego-ph-5LOhydOtTKU-unsplash.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/styles/Input.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/styles/User-input.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/dashboard/Eva.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dashboard/Navbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/dashboard/LandingPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dashboard/LandingPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/dashboard/Showcase.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dashboard/Showcase.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/login/Form.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/login/LoginForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/login/LoginForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/register/RegisterForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/register/RegisterForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/oauth/components/dashboard/Eva.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/oauth/components/dashboard/Eva.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/Main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/Main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/Register.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/Register.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/Showcase.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/Showcase.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,10 +33,42 @@
         <option value="Samson063 &lt;furthermaths078@gamil.com&gt;" />
       </list>
     </option>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="development" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="4" />
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="main" />
+                    <option name="lastUsedInstant" value="1645693554" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="development" />
+                    <option name="lastUsedInstant" value="1645693501" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="demonic-branch" />
+                    <option name="lastUsedInstant" value="1645693500" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -51,6 +103,7 @@
       <workItem from="1645101934098" duration="194000" />
       <workItem from="1645323722878" duration="298000" />
       <workItem from="1645431190569" duration="616000" />
+      <workItem from="1645458306889" duration="93000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1644944279538</created>
