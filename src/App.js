@@ -5,18 +5,15 @@ import RegisterForm from "./components/register/RegisterForm";
 import LoginForm from "./components/login/LoginForm";
 
 export const App = () => {
-
-  
   return (
     <div className="App">
       <Router>
         <Routes>
-          <Route path="/" element={<LandingPage />} />
-          <Route path="/register" element={<RegisterForm />} />
-          <Route path="/login" element={<LoginForm />} />
+          <Route path="/SocialNetwork" element={<LandingPage />} />
+          <Route path="/SocialNetwork/register" element={<RegisterForm />} />
+          <Route path="/SocialNetwork/login" element={<LoginForm />} />
         </Routes>
       </Router>
-
     </div>
   );
 };

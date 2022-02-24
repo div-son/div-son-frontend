@@ -5,10 +5,10 @@ import Showcase from "./Showcase";
 
 export const LandingPage = () => {
   return (
-      <div className="main">
-        <Navbar />
-        <Showcase />
-      </div>
+    <div className="main">
+      <Navbar />
+      <Showcase />
+    </div>
   );
 };
 
