@@ -25,11 +25,21 @@ export const Navbar = () => {
       </div>
 
       <ul className={renderClasses()}>
+<<<<<<< HEAD
         <li className="link">Blog and News</li>
 
         <li className="link">Contact us</li>
 
         <li className="link">People and Services</li>
+=======
+        <li className="link">Home</li>
+
+        <li className="link">About</li>
+
+        <li className="link">Contact us</li>
+
+        <li className="link">Services</li>
+>>>>>>> origin
       </ul>
 
       <div onClick={handleNavLinksToggle} className="hamburger-toggle">

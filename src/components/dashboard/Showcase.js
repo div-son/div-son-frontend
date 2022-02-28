@@ -5,8 +5,6 @@ import { Link } from "react-router-dom";
 import { AiOutlineArrowRight } from "react-icons/ai";
 
 export const Showcase = () => {
-
-  
   return (
     <div className="showcase">
       <h2>Discover an Adventure</h2>
@@ -28,7 +26,10 @@ export const Showcase = () => {
 =======
         {/*  */}
 
+<<<<<<< HEAD
 >>>>>>> 0fd0f95 (fix)
+=======
+>>>>>>> origin
         <Link to="/SocialNetwork/login">
           <button className="showcase__btn-login">Login</button>
         </Link>
