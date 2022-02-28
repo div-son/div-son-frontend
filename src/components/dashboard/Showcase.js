@@ -23,7 +23,12 @@ export const Showcase = () => {
             </b>
           </button>
         </Link>
+<<<<<<< HEAD
 {/*  */}
+=======
+        {/*  */}
+
+>>>>>>> 0fd0f95 (fix)
         <Link to="/SocialNetwork/login">
           <button className="showcase__btn-login">Login</button>
         </Link>
