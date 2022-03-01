@@ -1,4 +1,5 @@
 import "../../styles/Register.css";
+import React, { useState } from "react";
 import FormInput from "./FormInput";
 import { useState } from "react";
 
@@ -44,12 +45,6 @@ export const RegisterForm = (props) => {
     },
   ];
 
-  // const getJoke = () => {
-  //   axios.get("https://div-son.herokuapp.com").then((response) => {
-  //     console.log(response);
-  //   });
-  // };
-
   const handleSumit = (e) => {
     e.preventDefault();
   };
@@ -76,4 +71,5 @@ export const RegisterForm = (props) => {
     </div>
   );
 };
+
 export default RegisterForm;
