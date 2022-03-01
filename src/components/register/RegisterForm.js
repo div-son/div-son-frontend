@@ -1,18 +1,9 @@
 import "../../styles/Register.css";
-import React, {useState} from "react";
+import React, { useState } from "react";
 import FormInput from "./FormInput";
-<<<<<<< HEAD
 import { useState } from "react";
-<<<<<<< HEAD
-// import axios from "axios";
-
-=======
->>>>>>> e332f43 (react-bootstrap)
-=======
->>>>>>> origin
 
 export const RegisterForm = (props) => {
-
   const [values, setValues] = useState({
     firstname: "",
     lastname: "",
@@ -80,4 +71,5 @@ export const RegisterForm = (props) => {
     </div>
   );
 };
+
 export default RegisterForm;
