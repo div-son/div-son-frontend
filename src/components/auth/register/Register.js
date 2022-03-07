@@ -1,82 +1,101 @@
 import React, { useState, useEffect } from "react";
+import UseForm from "./UseForm";
+import ValidateInfo from "./ValidateInfo";
+import "../register/Register.css"
 
-const Regsiter = ({ history, match }) => {
-  const [firstName, setFirstName] = useState("");
-  const [lastName, setLastName] = useState("");
-  const [password, setPassword] = useState("");
-  const [email, setEmail] = useState("");
-
-  const handleRegister = (e) => {
-    e.preventDefault();
-    const visitor = { firstName, lastName, email, password };
-
-    fetch(" http://localhost:8080/users ", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(visitor),
-    });
-  };
-
+const Regsiter = () => {
+  const { handleChange, values, handleSubmit, errors } = UseForm(ValidateInfo);
   return (
-    <div>
-      <br />
-      <div className="container">
-        <div className="row">
-          <div className="card col-md-6 offset-md-3 offset-md-3">
-            <div className="card-body">
-              <form onSubmit>
-                <div className="form-group mb-2">
-                  <label className="form-label">First Name:</label>
-                  <input
-                    type="text"
-                    placeholder="Enter First Name"
-                    name="firstName"
-                    className="form-control"
-                    value={firstName}
-                    onChange={(e) => setFirstName(e.target.value)}
-                  />
-                </div>
-                <div className="form-group mb-2">
-                  <label className="form-label">Last Name:</label>
-                  <input
-                    type="text"
-                    placeholder="Enter Last Name"
-                    name="lastName"
-                    className="form-control"
-                    value={lastName}
-                    onChange={(e) => setLastName(e.target.value)}
-                  />
-                </div>
-                <div className="form-group mb-2">
-                  <label className="form-label">Email</label>
-                  <input
-                    type="Email"
-                    placeholder="Enter Email"
-                    name="email"
-                    className="form-control"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                  />
-                </div>
-                <div className="form-group mb-2">
-                  <label className="form-label">Password:</label>
-                  <input
-                    type="password"
-                    placeholder="Enter Password"
-                    name="username"
-                    className="form-control"
-                    value={password}
-                    onChange={(e) => setPassword(e.target.value)}
-                  />
-                </div>
-                <button className="btn btn-success" onClick={handleRegister}>
-                  Submit
-                </button>
-              </form>
-            </div>
-          </div>
+    <div className="form-content-right">
+      <form className="form" onSubmit={handleSubmit}>
+        <h1>Welcome</h1>
+
+        <div className="form-inputs">
+          <label htmlFor="firstName" className="form-label">
+            First name
+          </label>
+          <input
+            id="firstName"
+            type="text"
+            name="firstName"
+            className="form-input"
+            placeholder="Enter your first name"
+            value={values.firstName}
+            onChange={handleChange}
+          />
+          {errors.firstName && <p>{errors.firstName}</p>}
         </div>
-      </div>
+
+        <div className="form-inputs">
+          <label htmlFor="lastName" className="form-label">
+            Last name
+          </label>
+          <input
+            id="lastName"
+            type="text"
+            name="lastName"
+            className="form-input"
+            placeholder="Enter your last name"
+            value={values.lastName}
+            onChange={handleChange}
+          />
+          {errors.lastName && <p>{errors.lastName}</p>}
+        </div>
+
+        <div className="form-inputs">
+          <label htmlFor="email" className="form-label">
+            Email
+          </label>
+          <input
+            id="email"
+            type="email"
+            name="email"
+            className="form-input"
+            placeholder="Enter your email address"
+            value={values.email}
+            onChange={handleChange}
+          />
+          {errors.email && <p>{errors.email}</p>}
+        </div>
+
+        <div className="form-inputs">
+          <label htmlFor="password" className="form-label">
+            Password
+          </label>
+          <input
+            id="password"
+            type="password"
+            name="password"
+            className="form-input"
+            placeholder="Enter your password"
+            value={values.password}
+            onChange={handleChange}
+          />
+          {errors.password && <p>{errors.password}</p>}
+        </div>
+
+        <div className="form-inputs">
+          <label htmlFor="password" className="form-label">
+            Confirm Password
+          </label>
+          <input
+            id="password2"
+            type="password"
+            name="password2"
+            className="form-input"
+            placeholder="Confirm password"
+            value={values.password2}
+            onChange={handleChange}
+          />
+          {errors.password2 && <p>{errors.password2}</p>}
+        </div>
+        <button className="form-input-btn" type="submit">
+          Register
+        </button>
+        <span className="form-input-login">
+          Already have an account? Login <a href="#">here</a>
+        </span>
+      </form>
     </div>
   );
 };
