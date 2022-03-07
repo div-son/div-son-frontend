@@ -11,45 +11,52 @@
 .showcase h1 {
   font-size: 64px;
   color: white;
-  font-weight: normal;
+  font-weight: lighter;
   letter-spacing: 3px;
 }
 
 .showcase h2 {
-  font-size: 28;
+  font-size: 58px;
   color: white;
-  font-weight: lighter;
+  font-weight: bolder;
   letter-spacing: 4px;
 }
 
 .showcase p {
   color: white;
   text-align: center;
-  font-size: 16px;
+  font-size: 29px;
   margin-top: 10px;
   margin-bottom: 50px;
 }
 
 .showcase__btn-signup {
-  border: white solid 1px;
+  border: white 2px;
   background-color: transparent;
   color: white;
   padding: 10px;
   margin: 50px 10px;
   cursor: pointer;
+  font-size: 43px;
   border-radius: 20px;
 }
 
+
+.showcase__buttons{
+  font-size: 50px;
+}
+
+
 .icon {
-  font-size: 14px;
+  font-size: 34px;
 }
 
 .showcase__btn-login {
-  border: white solid 1px;
-  background-color: white;
+  border:  2px;
   color: rgb(26, 100, 122);
   padding: 10px 50px;
   cursor: pointer;
+  font-size: 30px;
   margin: 0 10px;
   border-radius: 20px;
 }

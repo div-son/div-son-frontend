@@ -20,31 +20,21 @@ export const Navbar = () => {
 
   return (
     <nav>
-      <div className="logo">
-        <h4>Div-son</h4>
-      </div>
+      {/* <div className="logo">
+        <h4>Zip</h4>
+      </div> */}
 
-      <ul className={renderClasses()}>
-<<<<<<< HEAD
+      {/* <ul className={renderClasses()}>
         <li className="link">Blog and News</li>
 
         <li className="link">Contact us</li>
 
-        <li className="link">People and Services</li>
-=======
-        <li className="link">Home</li>
-
-        <li className="link">About</li>
-
-        <li className="link">Contact us</li>
-
-        <li className="link">Services</li>
->>>>>>> origin
+        <li className="link">Videos</li>
       </ul>
 
       <div onClick={handleNavLinksToggle} className="hamburger-toggle">
         <i className="fa fa-bars" aria-hidden="true"></i>
-      </div>
+      </div> */}
     </nav>
   );
 };

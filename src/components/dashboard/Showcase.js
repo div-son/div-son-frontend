@@ -8,28 +8,21 @@ export const Showcase = () => {
   return (
     <div className="showcase">
       <h2>Discover an Adventure</h2>
+      <br></br>
       <h1>Made with designs!!</h1>
 
       <p>Say hello to people out there.</p>
       {/*  */}
       <div className="showcase__buttons">
+        Get Started
         <Link to="/SocialNetwork/register">
           <button className="showcase__btn-signup">
-            Get Started
-            <b className="icon">
+            here
+            {/* <b className="icon">
               <AiOutlineArrowRight />
-            </b>
+            </b> */}
           </button>
         </Link>
-<<<<<<< HEAD
-{/*  */}
-=======
-        {/*  */}
-
-<<<<<<< HEAD
->>>>>>> 0fd0f95 (fix)
-=======
->>>>>>> origin
         <Link to="/SocialNetwork/login">
           <button className="showcase__btn-login">Login</button>
         </Link>
